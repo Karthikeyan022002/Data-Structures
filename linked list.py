@@ -19,6 +19,18 @@ class Linkedlist:
                 new_node.next = self.head
                 self.head = new_node
 
+        def add_at_end(self, data):
+                new_node = Node(data)
+                if self.head is None:
+                        self.head = new_node
+                else:
+                        n = self.head
+                        while n.next is not None:
+                                n = n.next
+                        n.next = new_node
+
+                
+
 
 LL = Linkedlist()
 LL.add_at_beginning(10)
