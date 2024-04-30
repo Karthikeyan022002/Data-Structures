@@ -29,6 +29,18 @@ class Linkedlist:
                                 n = n.next
                         n.next = new_node
 
+        def add_after(self, data, num):
+                n = self.head
+                while n is not None:
+                        if num == n.data:
+                                break
+                        if n is None:
+                                print("Node is not present in Linked list")
+                        else:
+                                new_node = Node(data)
+                                
+
+
                 
 
 
